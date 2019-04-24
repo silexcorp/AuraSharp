@@ -1,0 +1,6 @@
+C:\Users\lechu\Desktop\Spectrum\AuraSharp\AuraSharp\bin\Debug\AuraSharp.dll
+C:\Users\lechu\Desktop\Spectrum\AuraSharp\AuraSharp\bin\Debug\AuraSharp.pdb
+C:\Users\lechu\Desktop\Spectrum\AuraSharp\AuraSharp\obj\Debug\AuraSharp.csprojAssemblyReference.cache
+C:\Users\lechu\Desktop\Spectrum\AuraSharp\AuraSharp\obj\Debug\AuraSharp.csproj.CoreCompileInputs.cache
+C:\Users\lechu\Desktop\Spectrum\AuraSharp\AuraSharp\obj\Debug\AuraSharp.dll
+C:\Users\lechu\Desktop\Spectrum\AuraSharp\AuraSharp\obj\Debug\AuraSharp.pdb
