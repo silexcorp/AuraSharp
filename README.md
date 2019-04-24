@@ -61,7 +61,7 @@ You can change colors in three ways.
 ```
 3. Using the byte array
 ```c#
-    byte[] my_colors = {255, 192, 255}
+    byte[] my_colors = {255, 192, 255};
     Aura.setAll(my_colors);
 ```
 
