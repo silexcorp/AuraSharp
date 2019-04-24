@@ -67,6 +67,8 @@ You can change colors in three ways.
 
 ## What works?
 - [x] Control of 12V RGB stripes
+- [x] Onboard leds like those mounted on the motherboard
+- [x] Components on the motherboard (such as the logo on the sound card in Asus ROG 470-I)
 ## What is not working?
 - Addressable RGB stripes
 - DRAM
