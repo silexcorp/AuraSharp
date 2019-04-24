@@ -12,18 +12,19 @@ This library creates functions using the original Aura SDK, and then lets you ea
 The Asus Aura SDK was last updated several years ago. The documentation contains information about other components such as DRAM support. BUT THESE FUNCTIONS DO NOT EXIST AND NEVER BE PUBLISHED (we love you Asus)
 
 # How to use it?
-1. If you compile a project in Visual Studio, put [AURA_SDK.dll](https://www.asus.com/campaign/aura/fl/SDK.html) in the Debug and Relase folders of your program.
-2. Set your program to work in x86 (32 bit) mode, because the Aura SDK library is written for 32bit.
-3. Use 'Add reference' to add a reference to AuraSharp.dll in your project.
-4. Inform your program that you will use AuraSharp.
+1. Install the latest Aura software. It can be turned on all the time.
+2. If you compile a project in Visual Studio, put [AURA_SDK.dll](https://www.asus.com/campaign/aura/fl/SDK.html) in the Debug and Relase folders of your program.
+3. Set your program to work in x86 (32 bit) mode, because the Aura SDK library is written for 32bit.
+4. Use 'Add reference' to add a reference to AuraSharp.dll in your project.
+5. Inform your program that you will use AuraSharp.
 ```c#
     using AuraSharp;
 ```
-5. Create a new class instance.
+6. Create a new class instance.
 ```c#
     Aura Aura = new Aura();
 ```
-6. That's all!
+7. That's all!
 
 ## Example program using the library
 ```c#
