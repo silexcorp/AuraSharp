@@ -76,4 +76,4 @@ You can change colors in three ways.
 - Moues
 - Keyboards
 
-### Thanks to [Andy Janata](https://github.com/ajanata) for creating AuraDriver. It helped me a lot in making this DLL 
+#### Thanks to [Andy Janata](https://github.com/ajanata) for creating AuraDriver. It helped me a lot in making this DLL 
