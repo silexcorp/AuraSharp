@@ -1,6 +1,0 @@
-C:\Users\lechu\Desktop\Spectrum\AuraSharp\AuraSharp\bin\Release\AuraSharp.dll
-C:\Users\lechu\Desktop\Spectrum\AuraSharp\AuraSharp\bin\Release\AuraSharp.pdb
-C:\Users\lechu\Desktop\Spectrum\AuraSharp\AuraSharp\obj\Release\AuraSharp.csproj.CoreCompileInputs.cache
-C:\Users\lechu\Desktop\Spectrum\AuraSharp\AuraSharp\obj\Release\AuraSharp.dll
-C:\Users\lechu\Desktop\Spectrum\AuraSharp\AuraSharp\obj\Release\AuraSharp.pdb
-C:\Users\lechu\Desktop\Spectrum\AuraSharp\AuraSharp\obj\Release\AuraSharp.csprojAssemblyReference.cache
