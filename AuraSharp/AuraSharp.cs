@@ -6,18 +6,10 @@ namespace AuraSharp
     public class Aura
     {
         public int[] controllers;
-
-        /*
-         * Constructor functions
-         */
         public Aura()
         {
             controllers = AuraSDK.GetMotherboardControllers();
         }
-
-        /*
-         * Public functions
-         */
         public void setAll(byte red, byte green, byte blue)
         {
             byte[] colors = { red, green, blue };
@@ -80,6 +72,9 @@ namespace AuraSharp
 
     }
 
+    /*
+     * AuraSharp Colors
+     */
     public class AuraColor
     {
         public static byte[] black = { 0, 0, 0 };
@@ -120,44 +115,33 @@ namespace AuraSharp
         public static int[] GetMotherboardControllers()
         {
             int count = EnumerateMbController(IntPtr.Zero, 0);
-            // TODO error handling
             int[] ret = new int[count];
-
             IntPtr handles = Marshal.AllocHGlobal(count * IntPtr.Size);
             int err = EnumerateMbController(handles, count);
-            // TODO error handling
             Marshal.Copy(handles, ret, 0, count);
             Marshal.FreeHGlobal(handles);
-
-            //EventLog.WriteEntry(LOG_SOURCE, "GetMotherboardControllers found " + count, EventLogEntryType.Information);
             return ret;
         }
 
         public static void SetMotherboardApplicationMode(int handle)
         {
-            // TODO error handling
             SetMbMode(new IntPtr(handle), 1);
         }
 
         public static void SetMotherboardDefaultMode(int handle)
         {
-            // TODO error handling
             SetMbMode(new IntPtr(handle), 0);
         }
 
         public static int GetMotherboardLedCount(int handle)
         {
-            // TODO error handling? says it returns 0 on error, but that's effectively a no-op success
             return GetMbLedCount(new IntPtr(handle));
         }
 
         public static byte[] GetMotherboardColors(int handle)
         {
             int ledCount = GetMotherboardLedCount(handle);
-
-            // 3 bytes per LED for color
             IntPtr p = Marshal.AllocHGlobal(ledCount * 3);
-            // TODO error handling
             GetMbColor(new IntPtr(handle), p, ledCount);
             byte[] get_colors = new byte[ledCount * 3];
             Marshal.Copy(p, get_colors, 0, ledCount * 3);
@@ -168,7 +152,6 @@ namespace AuraSharp
 
         public static void SetMotherboardColors(int handle, byte[] colors)
         {
-
             int ledCount = GetMotherboardLedCount(handle);
             byte[] bytes = new byte[ledCount * 3];
             for (int i = 0; i < bytes.Length; i += 3)
@@ -176,14 +159,11 @@ namespace AuraSharp
                 bytes[i] = colors[0];
                 bytes[i + 1] = colors[1];
                 bytes[i + 2] = colors[2];
-
             }
-
             IntPtr p = Marshal.AllocHGlobal(bytes.Length);
             Marshal.Copy(bytes, 0, p, bytes.Length);
             SetMbColor(new IntPtr(handle), p, bytes.Length);
             Marshal.FreeHGlobal(p);
-
         }
     }
 }
