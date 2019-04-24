@@ -73,5 +73,7 @@ You can change colors in three ways.
 - Addressable RGB stripes
 - DRAM
 - GPU
+- Moues
+- Keyboards
 
 ### Thanks to [Andy Janata](https://github.com/ajanata) for creating AuraDriver. It helped me a lot in making this DLL 
